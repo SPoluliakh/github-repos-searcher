@@ -1,4 +1,3 @@
-// import { AppBar, Toolbar } from '@mui/material';
 import { AuthNav } from 'Components/AuthNav/AuthNav';
 import { UserNav } from 'Components/UserNav/UserNav';
 import { UserMenu } from 'Components/UserMenu/UserMenu';
