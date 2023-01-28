@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgithub_repo_searcher=self.webpackChunkgithub_repo_searcher||[]).push([[623],{7623:function(e,n,s){s.r(n),s.d(n,{NotFoundPage:function(){return h}});var r,i=s(3839),t=s(9805),o=s(168),c=s(6444).ZP.div(r||(r=(0,o.Z)(["\n  display: flex;\n  flex-direction: column;\n"]))),u=s(3329),h=function(){return(0,u.jsxs)(c,{children:[(0,u.jsx)(i.s,{}),(0,u.jsx)("p",{children:"Opsss this page does not exist..."}),(0,u.jsx)(t.x,{to:"/",children:" Go home page "})]})}}}]);
+//# sourceMappingURL=623.319a30c5.chunk.js.map

@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.2febb35c.css",
-    "main.js": "/static/js/main.a44a8374.js",
+    "main.js": "/static/js/main.cf65e1b1.js",
+    "static/js/623.319a30c5.chunk.js": "/static/js/623.319a30c5.chunk.js",
     "static/media/pulp-fiction-john-travolta.gif": "/static/media/pulp-fiction-john-travolta.59b46f4510af6cc07976.gif",
     "index.html": "/index.html",
     "main.2febb35c.css.map": "/static/css/main.2febb35c.css.map",
-    "main.a44a8374.js.map": "/static/js/main.a44a8374.js.map"
+    "main.cf65e1b1.js.map": "/static/js/main.cf65e1b1.js.map",
+    "623.319a30c5.chunk.js.map": "/static/js/623.319a30c5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2febb35c.css",
-    "static/js/main.a44a8374.js"
+    "static/js/main.cf65e1b1.js"
   ]
 }
