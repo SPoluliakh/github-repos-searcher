@@ -13,11 +13,14 @@ export const SearchInput = styled.input`
   outline: none;
   padding-left: ${p => p.theme.space[3]}px;
   color: ${p => p.theme.colors.text};
-  font-size: ${p => p.theme.fontSizes.ml}px;
+  font-size: ${p => p.theme.fontSizes.mm}px;
+  font-family: ${p => p.theme.fontFamily.link};
 
   ::placeholder {
     font-size: ${p => p.theme.fontSizes.ml}px;
     color: ${p => p.theme.colors.text};
+    font-family: ${p => p.theme.fontFamily.link};
+    transition: 300ms linear;
   }
   :focus {
     ::placeholder {

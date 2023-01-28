@@ -1,4 +1,4 @@
-// import { Container } from '@mui/material';
+import { Suspense } from 'react';
 import { Navigation } from 'Components/Navigation/Navigation';
 import { Outlet } from 'react-router-dom';
 import * as SC from './Layout.styled';
@@ -9,7 +9,9 @@ export const Layout = () => {
       <SC.Wrap>
         <Navigation />
         <main>
-          <Outlet />
+          <Suspense fallback={null}>
+            <Outlet />
+          </Suspense>
         </main>
       </SC.Wrap>
     </div>

@@ -1,3 +1,4 @@
+import { lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from 'Components/Layout/Layout';
 import { HomePage } from 'Pages/HomePage/HomePage';
@@ -9,6 +10,13 @@ import { PrivateRout } from 'Components/CustomRouts/PrivateRout';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { refreshUser } from 'Redux/auth/authOperations';
+
+const NotFoundPage = lazy(() =>
+  import('../../Pages/NotFoundPage/NotFoundPage').then(module => ({
+    ...module,
+    default: module.NotFoundPage,
+  }))
+);
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -45,6 +53,7 @@ export const App = () => {
               />
             }
           />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </>

@@ -22,6 +22,7 @@ export const ReposWrap = styled.div`
 `;
 
 export const RemouveBtn = styled.button`
+  font-family: ${p => p.theme.fontFamily.Text};
   cursor: pointer;
   background-color: ${p =>
     p.disabled ? p.theme.colors.hoverBtn : p.theme.colors.deleteButton};
@@ -30,6 +31,8 @@ export const RemouveBtn = styled.button`
   box-shadow: ${p => p.theme.shadows.buttonsShadow};
   color: ${p => p.theme.colors.text};
   margin-top: ${p => p.theme.space[4]}px;
+  padding-left: ${p => p.theme.space[2]}px;
+  padding-right: ${p => p.theme.space[2]}px;
   transition: 250ms linear;
   :hover {
     background-color: ${p => p.theme.colors.hoverBtn};
@@ -45,4 +48,5 @@ export const RepoTitle = styled.h2``;
 export const LinkToRepo = styled.a`
   text-decoration: none;
   color: ${p => p.theme.colors.text};
+  font-family: ${p => p.theme.fontFamily.link};
 `;

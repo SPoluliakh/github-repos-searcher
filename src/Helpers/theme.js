@@ -1,9 +1,14 @@
 export const theme = Object.freeze({
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  fontFamily: {
+    link: 'Source Sans Pro',
+    Text: 'Caveat ',
+  },
   fontSizes: {
     xs: 12,
     s: 14,
     m: 16,
+    mm: 20,
     ml: 24,
     l: 32,
     xl: 64,
@@ -24,6 +29,7 @@ export const theme = Object.freeze({
     hoverBtn: 'black',
     text: 'wheat',
     spanText: 'white',
+    linkText: 'white',
     header: 'linear-gradient(180deg,rgba(18, 18, 18, 0)0.01%,#02030B 99.53%)',
   },
   radii: {

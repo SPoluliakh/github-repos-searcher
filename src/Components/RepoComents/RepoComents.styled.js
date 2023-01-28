@@ -22,6 +22,7 @@ export const ReposComentsWrap = styled.div`
 `;
 
 export const ChangeBtn = styled.button`
+  font-family: ${p => p.theme.fontFamily.Text};
   cursor: pointer;
   background-color: ${p => p.theme.colors.deleteButton};
   border-radius: ${p => p.theme.radii.normal};
@@ -29,6 +30,8 @@ export const ChangeBtn = styled.button`
   box-shadow: ${p => p.theme.shadows.buttonsShadow};
   color: ${p => p.theme.colors.text};
   margin-top: ${p => p.theme.space[4]}px;
+  padding-left: ${p => p.theme.space[2]}px;
+  padding-right: ${p => p.theme.space[2]}px;
   transition: 250ms linear;
   :hover {
     background-color: ${p => p.theme.colors.hoverBtn};
@@ -36,16 +39,14 @@ export const ChangeBtn = styled.button`
 `;
 
 export const Text = styled.textarea`
+  font-family: ${p => p.theme.fontFamily.link};
+  letter-spacing: 0.9px;
   color: ${p => p.theme.colors.text};
   background-color: inherit;
   width: 100%;
   border: none;
   resize: none;
 `;
-
-// export const SpanText = styled.span`
-//   color: ${p => p.theme.colors.spanText};
-// `;
 
 export const ComentsForm = styled.form`
   width: 100%;

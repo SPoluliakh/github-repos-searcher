@@ -11,8 +11,10 @@ export const WelcomText = styled.p`
   color: ${p => p.theme.colors.text};
   margin-bottom: ${p => p.theme.space[3]}px;
   text-shadow: ${p => p.theme.shadows.textShadow};
+  font-family: ${p => p.theme.fontFamily.Text};
 `;
 export const OutBtn = styled.button`
+  font-family: ${p => p.theme.fontFamily.Text};
   cursor: pointer;
   background-color: ${p => p.theme.colors.deleteButton};
   border-radius: ${p => p.theme.radii.normal};
