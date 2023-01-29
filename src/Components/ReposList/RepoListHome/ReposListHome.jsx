@@ -1,13 +1,19 @@
+import { useScrollbar } from 'Components/huks/useScrollBar';
 import { NoInfo } from 'Components/NoInfo/NoInfo';
+import { useRef } from 'react';
 import { RepoListItem } from '../RepoListItem/RepoListItem';
 import * as SC from './ReposListHome.styled';
 
 export const ReposListHome = ({ userRepos, isLoading }) => {
-  if (!userRepos) return;
+  const list = useRef();
+  const hasScroll = userRepos?.length > 1;
+  useScrollbar(list, hasScroll);
+
+  if (!userRepos?.length) return;
 
   return (
     <>
-      <SC.List>
+      <SC.List ref={list}>
         {isLoading && <li>Loading...</li>}
         {!userRepos.length && <li>{<NoInfo />}</li>}
         {userRepos.map(

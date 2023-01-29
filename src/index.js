@@ -7,6 +7,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from './Redux/store';
 import { App } from './Components/App/App';
 import './index.css';
+import 'overlayscrollbars/overlayscrollbars.css';
 import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
