@@ -9,14 +9,17 @@ export const Item = styled.li`
 `;
 
 export const ReposWrap = styled.div`
-  width: 350px;
+  width: ${p => (p['data-list'] ? 200 : 350)}px;
   padding: ${p => p.theme.space[3]}px;
   box-shadow: ${p => p.theme.shadows.textShadow};
   border-radius: ${p => p.theme.radii.normal};
   transition: 250ms linear;
   overflow-x: hidden;
+  @media (min-width: 668px) {
+    width: ${p => (p['data-list'] ? 265 : 400)}px;
+  }
   @media (min-width: 768px) {
-    width: 400px;
+    width: ${p => (p['data-list'] ? 280 : 400)}px;
   }
   @media (min-width: 1200px) {
     width: 450px;

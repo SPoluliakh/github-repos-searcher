@@ -3,7 +3,7 @@ import { RepoListItem } from '../RepoListItem/RepoListItem';
 import * as SC from './ReposListHome.styled';
 import { scrollbars } from 'Helpers/scrollbars';
 
-export const ReposListHome = ({ userRepos, isLoading }) => {
+export const ReposListHome = ({ userRepos, isLoading, reposDropdown }) => {
   if (!userRepos?.length) return;
   return (
     <>
@@ -28,6 +28,7 @@ export const ReposListHome = ({ userRepos, isLoading }) => {
               watchers={watchers}
               description={description ?? 'No info'}
               updated_at={updated_at ?? Date.now()}
+              reposDropdown={reposDropdown}
             />
           )
         )}

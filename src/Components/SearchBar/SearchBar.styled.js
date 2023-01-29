@@ -16,11 +16,11 @@ export const SearchInput = styled.input`
   font-family: ${p => p.theme.fontFamily.link};
 
   @media (min-width: 320px) {
-    width: 200px;
+    width: 220px;
   }
 
   @media (min-width: 768px) {
-    width: 360px;
+    width: 300px;
   }
   @media (min-width: 1200px) {
     width: 400px;

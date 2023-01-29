@@ -62,7 +62,11 @@ export const Home = () => {
           />
         )}
         {reposDropdown && query.length >= 3 && (
-          <ReposListHome userRepos={userRepos} isLoading={isFetching} />
+          <ReposListHome
+            userRepos={userRepos}
+            isLoading={isFetching}
+            reposDropdown={reposDropdown}
+          />
         )}
       </SC.Wrap>
       {!query && (

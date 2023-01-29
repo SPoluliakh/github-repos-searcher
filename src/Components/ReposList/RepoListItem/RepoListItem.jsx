@@ -20,6 +20,7 @@ export const RepoListItem = ({
   description,
   updated_at,
   coments,
+  reposDropdown,
 }) => {
   const reposData = {
     html_url,
@@ -50,7 +51,7 @@ export const RepoListItem = ({
   return (
     <>
       <SC.Item>
-        <SC.ReposWrap>
+        <SC.ReposWrap data-list={reposDropdown}>
           <SC.LinkToRepo href={html_url} target="_blank" rel="noreferrer">
             <SC.RepoTitle> {full_name} </SC.RepoTitle>
             <p>

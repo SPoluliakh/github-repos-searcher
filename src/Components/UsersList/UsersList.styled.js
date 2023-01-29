@@ -4,8 +4,8 @@ import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 export const UserList = styled(OverlayScrollbarsComponent)`
   list-style: none;
   position: absolute;
-  top: 60px;
-  left: ${p => (p['data-check'] ? 225 : 0)}px;
+  top: ${p => (p['data-check'] ? 580 : 60)}px;
+  left: 10px;
   max-height: 465px;
   width: 200px;
   box-shadow: ${p => p.theme.shadows.textShadow};
@@ -13,13 +13,18 @@ export const UserList = styled(OverlayScrollbarsComponent)`
   padding: ${p => p.theme.space[3]}px;
   overflow-y: auto;
   transition: 750ms linear;
+  @media (min-width: 668px) {
+    left: 35px;
+  }
   @media (min-width: 768px) {
     width: 200px;
-    left: ${p => (p['data-check'] ? 385 : 90)}px;
+    left: ${p => (p['data-check'] ? 345 : 90)}px;
+    top: 60px;
   }
   @media (min-width: 1200px) {
     width: 400px;
     left: ${p => (p['data-check'] ? 425 : 0)}px;
+    top: 60px;
   }
 
   &

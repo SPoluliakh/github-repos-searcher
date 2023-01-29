@@ -11,7 +11,11 @@ export const Wrap = styled.section`
 export const TextWrap = styled.div`
   padding-top: ${p => p.theme.space[5]}px;
   text-align: center;
-  width: 500px;
+  width: 200px;
+
+  @media (min-width: 768px) {
+    width: 500px;
+  }
 `;
 
 export const Text = styled.p`
