@@ -36,7 +36,6 @@ export const signIn = createAsyncThunk(
       return data.data;
     } catch (error) {
       if (error) {
-        console.log(error);
         toast.error('Name or email error');
         throw new Error();
       }
