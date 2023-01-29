@@ -20,9 +20,9 @@ export const signUp = createAsyncThunk(
       setAuthHeader(data.token);
       return data;
     } catch (error) {
-      //   if (error) {
-      //     throw new Error();
-      //   }
+      if (error) {
+        throw new Error();
+      }
       thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -35,10 +35,10 @@ export const signIn = createAsyncThunk(
       setAuthHeader(data.token);
       return data.data;
     } catch (error) {
-      //   if (error) {
-      //     toast.error('Name or email error');
-      //     throw new Error();
-      //   }
+      if (error) {
+        toast.error('Name or email error');
+        throw new Error();
+      }
       toast.error('Name or email error');
       thunkAPI.rejectWithValue(error.message);
     }
