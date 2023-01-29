@@ -5,8 +5,13 @@ export const ReposComentsWrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  width: 450px;
-
+  width: 350px;
+  @media (min-width: 768px) {
+    width: 400px;
+  }
+  @media (min-width: 1200px) {
+    width: 450px;
+  }
   margin-bottom: ${p => p.theme.space[3]}px;
   padding: ${p => p.theme.space[3]}px;
   box-shadow: ${p => p.theme.shadows.textShadow};

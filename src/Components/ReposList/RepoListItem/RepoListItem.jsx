@@ -1,7 +1,7 @@
 import { useAuth } from 'Components/huks/useAuth';
 import { RepoComents } from 'Components/RepoComents/RepoComents';
 import { useState } from 'react';
-import { FaArrowsAltH } from 'react-icons/fa';
+import { FaArrowsAltH, FaArrowsAltV } from 'react-icons/fa';
 
 import {
   useAddRepoMutation,
@@ -9,6 +9,7 @@ import {
   useRemoveRepoMutation,
 } from 'Redux/reposOperations/reposOperations';
 import * as SC from './RepoListItem.styled';
+let imgWidth = window.innerWidth >= 1200;
 
 export const RepoListItem = ({
   id,
@@ -83,7 +84,11 @@ export const RepoListItem = ({
         </SC.ReposWrap>
         {id && (
           <SC.ArrowWrap>
-            <FaArrowsAltH size="24" />
+            {imgWidth ? (
+              <FaArrowsAltH size="24" color="wheat" />
+            ) : (
+              <FaArrowsAltV size="18" color="wheat" />
+            )}
           </SC.ArrowWrap>
         )}
         {id && <RepoComents coments={coments} id={id} />}

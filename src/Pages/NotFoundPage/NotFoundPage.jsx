@@ -6,8 +6,8 @@ export const NotFoundPage = () => {
   return (
     <SC.Wrap>
       <NoInfo />
-      <p>Opsss this page does not exist...</p>
-      <CustomLink to="/"> Go home page </CustomLink>
+      <p>Opsss... this page does not exist...</p>
+      <CustomLink to="/">Go home page </CustomLink>
     </SC.Wrap>
   );
 };

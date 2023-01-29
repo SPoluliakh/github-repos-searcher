@@ -1,4 +1,3 @@
-import { NoInfo } from 'Components/NoInfo/NoInfo';
 import { RepoListItem } from '../RepoListItem/RepoListItem';
 import * as SC from './RepoListLibrary.styled';
 
@@ -8,7 +7,6 @@ export const ReposListLibrary = ({ userRepos, isLoading }) => {
     <>
       <SC.List>
         {isLoading && <li>Loading...</li>}
-        {!userRepos.length && <li>{<NoInfo />}</li>}
         {userRepos.map(
           ({
             _id,

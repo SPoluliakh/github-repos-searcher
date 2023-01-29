@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
-export const NavigationWrap = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-export const IconWrap = styled.div`
-  margin-bottom: ${p => p.theme.space[2]}px;
+export const Text = styled.p`
+  padding-top: ${p => p.theme.space[5]}px;
+  color: ${p => p.theme.colors.text};
+  font-family: ${p => p.theme.fontFamily.link};
 `;

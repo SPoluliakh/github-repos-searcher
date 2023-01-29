@@ -1,17 +1,26 @@
 import styled from 'styled-components';
 
 export const Item = styled.li`
-  display: flex;
-  align-items: center;
+  text-align: center;
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export const ReposWrap = styled.div`
-  width: 450px;
+  width: 350px;
   padding: ${p => p.theme.space[3]}px;
   box-shadow: ${p => p.theme.shadows.textShadow};
   border-radius: ${p => p.theme.radii.normal};
   transition: 250ms linear;
   overflow-x: hidden;
+  @media (min-width: 768px) {
+    width: 400px;
+  }
+  @media (min-width: 1200px) {
+    width: 450px;
+  }
 
   :not(:last-child) {
     margin-bottom: ${p => p.theme.space[3]}px;

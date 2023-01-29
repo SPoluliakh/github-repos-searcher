@@ -62,23 +62,23 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 
-  width: 320px;
+  width: 90vw;
 }
 
 #root {
   padding: 0 15px;
   margin: 0 auto;
 
-  width: 320px;
+  width: 90vw;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 90vw;
   }
 
   #root {
-    width: 768px;
+    width: 90vw;
   }
 }
 @media screen and (min-width: 1200px) {

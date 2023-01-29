@@ -8,6 +8,7 @@ export const LoginForm = styled.form`
 `;
 
 export const InputArea = styled.input`
+  font-family: ${p => p.theme.fontFamily.Text};
   color: ${p => p.theme.colors.text};
   font-size: ${p => p.theme.fontSizes.m}px;
   padding: ${p => p.theme.space[1]}px;
@@ -27,6 +28,7 @@ export const InputArea = styled.input`
 
   ::placeholder {
     font-size: 20px;
+    font-family: ${p => p.theme.fontFamily.Text};
   }
   :focus {
     ::placeholder {
@@ -39,6 +41,7 @@ export const InputArea = styled.input`
 `;
 
 export const LabelArea = styled.label`
+  font-family: ${p => p.theme.fontFamily.Text};
   color: ${p => p.theme.colors.text};
   font-size: ${p => p.theme.fontSizes.m}px;
   @media (min-width: 768px) {
@@ -78,6 +81,7 @@ export const LoginButton = styled.button`
   box-shadow: ${p => p.theme.shadows.buttonsShadow};
   color: ${p => p.theme.colors.text};
   margin-top: ${p => p.theme.space[2]}px;
+  font-family: ${p => p.theme.fontFamily.Text};
   transition: 250ms linear;
   cursor: pointer;
   :hover {

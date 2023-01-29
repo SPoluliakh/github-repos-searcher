@@ -44,25 +44,45 @@ export const Home = () => {
     setReposDropdown(true);
   };
   return (
-    <SC.Wrap>
-      <h2 className="visually-hidden">Home page</h2>
-      <SearchBar
-        value={query}
-        onInputChange={handleFilterChange}
-        onClearBtn={handleFilterClear}
-        element={filterArea}
-      />
-      {userDropdown && (
-        <UsersList
-          users={data}
-          reposDropdown={reposDropdown}
-          onItemClick={clickHandler}
-          isLoading={isFetching}
+    <>
+      <SC.Wrap>
+        <h2 className="visually-hidden">Home page</h2>
+        <SearchBar
+          value={query}
+          onInputChange={handleFilterChange}
+          onClearBtn={handleFilterClear}
+          element={filterArea}
         />
+        {userDropdown && (
+          <UsersList
+            users={data}
+            reposDropdown={reposDropdown}
+            onItemClick={clickHandler}
+            isLoading={isFetching}
+          />
+        )}
+        {reposDropdown && query.length >= 3 && (
+          <ReposListHome userRepos={userRepos} isLoading={isFetching} />
+        )}
+      </SC.Wrap>
+      {!query && (
+        <SC.TextWrap>
+          <SC.Text>
+            Hi there! <SC.WebName>Github-repo-seacher</SC.WebName> has been
+            developed to help you not to search necessary information from
+            Github repos each time when you need it. It will also help to keep
+            browser tabs clear. There are few simple steps:
+          </SC.Text>
+          <SC.Text>1. Sign up.</SC.Text>
+          <SC.Text>2. Find necessary repos by owners nickName.</SC.Text>
+          <SC.Text>3. Add repos to your library.</SC.Text>
+          <SC.Text>
+            4. Leave comments to the repos if you need it.At any time you can
+            change coments or remove repos from your library.
+          </SC.Text>
+          <SC.Text>5. Enjoy by using Github-repo-seacher.</SC.Text>
+        </SC.TextWrap>
       )}
-      {reposDropdown && query.length >= 3 && (
-        <ReposListHome userRepos={userRepos} isLoading={isFetching} />
-      )}
-    </SC.Wrap>
+    </>
   );
 };

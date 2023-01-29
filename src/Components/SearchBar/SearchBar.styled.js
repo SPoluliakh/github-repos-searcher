@@ -9,7 +9,6 @@ export const SearchInput = styled.input`
   border: ${p => p.theme.borders.none};
   background-color: transparent;
   border-bottom: ${p => p.theme.borders.input};
-  /* width: 400px; */
   outline: none;
   padding-left: ${p => p.theme.space[3]}px;
   color: ${p => p.theme.colors.text};
@@ -21,6 +20,9 @@ export const SearchInput = styled.input`
   }
 
   @media (min-width: 768px) {
+    width: 360px;
+  }
+  @media (min-width: 1200px) {
     width: 400px;
   }
 
