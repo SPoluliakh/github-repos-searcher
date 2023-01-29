@@ -61,11 +61,32 @@ img {
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  width: 480px;
+
+  width: 320px;
+}
+
+#root {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  width: 320px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
+    width: 768px;
+  }
+
+  #root {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 90vw;
+  }
+
+  #root {
     width: 90vw;
   }
 }

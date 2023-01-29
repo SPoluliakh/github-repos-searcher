@@ -9,12 +9,20 @@ export const SearchInput = styled.input`
   border: ${p => p.theme.borders.none};
   background-color: transparent;
   border-bottom: ${p => p.theme.borders.input};
-  width: 400px;
+  /* width: 400px; */
   outline: none;
   padding-left: ${p => p.theme.space[3]}px;
   color: ${p => p.theme.colors.text};
   font-size: ${p => p.theme.fontSizes.mm}px;
   font-family: ${p => p.theme.fontFamily.link};
+
+  @media (min-width: 320px) {
+    width: 200px;
+  }
+
+  @media (min-width: 768px) {
+    width: 400px;
+  }
 
   ::placeholder {
     font-size: ${p => p.theme.fontSizes.ml}px;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 
-export const UserList = styled.ul`
+export const UserList = styled(OverlayScrollbarsComponent)`
   list-style: none;
   position: absolute;
   top: 55px;
