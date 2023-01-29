@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.67460081.css",
-    "main.js": "/static/js/main.991cc26c.js",
+    "main.js": "/static/js/main.a56d32b3.js",
     "static/js/623.28e67c25.chunk.js": "/static/js/623.28e67c25.chunk.js",
     "static/js/967.91219827.chunk.js": "/static/js/967.91219827.chunk.js",
     "static/js/459.61a31131.chunk.js": "/static/js/459.61a31131.chunk.js",
@@ -11,7 +11,7 @@
     "static/media/pulp-fiction-john-travolta.gif": "/static/media/pulp-fiction-john-travolta.59b46f4510af6cc07976.gif",
     "index.html": "/index.html",
     "main.67460081.css.map": "/static/css/main.67460081.css.map",
-    "main.991cc26c.js.map": "/static/js/main.991cc26c.js.map",
+    "main.a56d32b3.js.map": "/static/js/main.a56d32b3.js.map",
     "623.28e67c25.chunk.js.map": "/static/js/623.28e67c25.chunk.js.map",
     "967.91219827.chunk.js.map": "/static/js/967.91219827.chunk.js.map",
     "459.61a31131.chunk.js.map": "/static/js/459.61a31131.chunk.js.map",
@@ -21,6 +21,6 @@
   },
   "entrypoints": [
     "static/css/main.67460081.css",
-    "static/js/main.991cc26c.js"
+    "static/js/main.a56d32b3.js"
   ]
 }
