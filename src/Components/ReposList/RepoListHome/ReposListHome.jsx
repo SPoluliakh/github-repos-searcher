@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { NoInfo } from 'Components/NoInfo/NoInfo';
 import { RepoListItem } from '../RepoListItem/RepoListItem';
 import * as SC from './ReposListHome.styled';
@@ -35,4 +36,10 @@ export const ReposListHome = ({ userRepos, isLoading, reposDropdown }) => {
       </SC.List>
     </>
   );
+};
+
+ReposListHome.propTypes = {
+  userRepos: PropTypes.array,
+  isLoading: PropTypes.bool,
+  reposDropdown: PropTypes.bool,
 };

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useUpdateRepoComentsMutation } from 'Redux/reposOperations/reposOperations';
 import * as SC from './RepoComents.styled';
@@ -35,4 +36,9 @@ export const RepoComents = ({ coments, id }) => {
       </SC.ComentsForm>
     </SC.ReposComentsWrap>
   );
+};
+
+RepoComents.propTypes = {
+  coments: PropTypes.string,
+  id: PropTypes.string,
 };

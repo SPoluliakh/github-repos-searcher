@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { RepoListItem } from '../RepoListItem/RepoListItem';
 import * as SC from './RepoListLibrary.styled';
 
@@ -34,4 +35,9 @@ export const ReposListLibrary = ({ userRepos, isLoading }) => {
       </SC.List>
     </>
   );
+};
+
+ReposListLibrary.propTypes = {
+  userRepos: PropTypes.array,
+  isLoading: PropTypes.bool,
 };

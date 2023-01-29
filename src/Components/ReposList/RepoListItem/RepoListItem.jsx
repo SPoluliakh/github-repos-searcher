@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useAuth } from 'Components/huks/useAuth';
 import { RepoComents } from 'Components/RepoComents/RepoComents';
 import { useState } from 'react';
@@ -96,4 +97,16 @@ export const RepoListItem = ({
       </SC.Item>
     </>
   );
+};
+
+RepoListItem.propTypes = {
+  id: PropTypes.string,
+  html_url: PropTypes.string,
+  full_name: PropTypes.string,
+  forks: PropTypes.number,
+  watchers: PropTypes.number,
+  description: PropTypes.string,
+  updated_at: PropTypes.string,
+  coments: PropTypes.string,
+  reposDropdown: PropTypes.bool,
 };

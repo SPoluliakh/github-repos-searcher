@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { NoInfo } from 'Components/NoInfo/NoInfo';
 import * as SC from './UsersList.styled';
 import { scrollbars } from 'Helpers/scrollbars';
@@ -18,4 +19,11 @@ export const UsersList = ({ users, onItemClick, reposDropdown, isLoading }) => {
       ))}
     </SC.UserList>
   );
+};
+
+UsersList.propTypes = {
+  users: PropTypes.array,
+  reposDropdown: PropTypes.bool,
+  isLoading: PropTypes.bool,
+  onItemClick: PropTypes.func,
 };

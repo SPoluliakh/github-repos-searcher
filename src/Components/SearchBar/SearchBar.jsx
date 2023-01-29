@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { BsXLg } from 'react-icons/bs';
 import * as SC from './SearchBar.styled';
 
@@ -16,4 +17,11 @@ export const SearchBar = ({ onInputChange, value, element, onClearBtn }) => {
       </SC.ClearButton>
     </SC.Wrap>
   );
+};
+
+SearchBar.propTypes = {
+  element: PropTypes.object,
+  onClearBtn: PropTypes.func,
+  value: PropTypes.string,
+  onInputChange: PropTypes.func,
 };
