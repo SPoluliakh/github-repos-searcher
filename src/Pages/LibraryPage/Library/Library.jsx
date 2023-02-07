@@ -5,7 +5,13 @@ import { FaSearch } from 'react-icons/fa';
 import * as SC from './Library.styled';
 
 export const Library = () => {
-  const { data, isFetching } = useGetAllReposQuery();
+  const { data, isFetching } = useGetAllReposQuery(
+    {},
+    {
+      refetchOnMountOrArgChange: true,
+      refetchOnFocus: true,
+    }
+  );
   return (
     <section>
       <h1 className="visually-hidden">Your library</h1>

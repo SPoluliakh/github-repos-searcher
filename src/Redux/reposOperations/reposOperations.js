@@ -20,6 +20,7 @@ export const reposApi = createApi({
     getAllRepos: builder.query({
       query: () => `/library`,
       transformResponse: response => response.data.result,
+
       providesTags: ['repos'],
     }),
     addRepo: builder.mutation({
