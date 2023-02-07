@@ -17,8 +17,9 @@ export const signUp = createAsyncThunk(
   async (credentials, thunkAPI) => {
     try {
       const { data } = await axios.post('/auth/register', credentials);
-      setAuthHeader(data.token);
-      return data;
+
+      setAuthHeader(data.data.token);
+      return data.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
@@ -29,7 +30,7 @@ export const signIn = createAsyncThunk(
   async (credentials, thunkAPI) => {
     try {
       const { data } = await axios.post('/auth/login', credentials);
-      setAuthHeader(data.token);
+      setAuthHeader(data.data.token);
       return data.data;
     } catch (error) {
       toast.error('Name or email error');
